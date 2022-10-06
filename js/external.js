@@ -28,20 +28,17 @@ let pay = amazon + google + facebook;
 alert ( 'your total pay is ' + pay);
 
 
-// class enrollment
 
-alert ("It is time for your enrollment");
-prompt( 'Are you enrolled?');
-prompt(' is the class full?');
-prompt('Is there a schedule conflict?')
-alert(' You are good to enroll!')
+let studentEnrollment = confirm("Are you currently a student?");
+let schedule = confirm("Can you take this class?");
+let availability = confirm( "Is There room in the class?")
+alert ("You can enroll in the class!" +(studentEnrollment && schedule && availability))
 
 //product offer
-prompt('Are you a premium member?')
-alert ('The product offer is valid for you!')
-prompt('have you bought more then two items?')
-alert ('Product offer is valid')
-
+let member =confirm("Are you a premium member?");
+let offer = confirm("is the offer still valid?");
+let cart = confirm ("Do you have more than 2 items in your cart?");
+alert ("Proceed to purchase "+ (member || cart && offer));
 
 
 
