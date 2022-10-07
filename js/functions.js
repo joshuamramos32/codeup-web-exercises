@@ -1,5 +1,6 @@
 "use strict";
 
+(function(){
 /**
  * TODO:
  * Create a function called 'sayHello' that takes a parameter 'name'.
@@ -112,8 +113,9 @@ alert ("You total with tip will be" + calculateTip(usertip,usertotal).toFixed(2)
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
 function applyDiscount(itemprice, itemdiscount){
-    let disprice = itemprice -(itemprice *itemdiscount)
-    return disprice;
+    let discountprice = itemprice -(itemprice *itemdiscount)
+    return discountprice;
 }
 console.log(applyDiscount(100, .2));
 console.log(applyDiscount(45.99, 0.12));
+})()
