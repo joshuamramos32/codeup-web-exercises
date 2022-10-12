@@ -67,7 +67,7 @@ let random = Math.floor((Math.random() * 3) + 1);
 
 
 
-/**
+/*
  * TODO:
  * Create a function named 'calculateTip' to calculate a tip on a bill at a
  * restaurant. The function should accept a tip percentage and the total of the
@@ -79,12 +79,12 @@ let random = Math.floor((Math.random() * 3) + 1);
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
 
-
+/*
 function calculateTip(tipPercentage, billTotal){
     let tipTotal = tipPercentage + billTotal;
     return(tipTotal);
 }
-console.log(calculateTip(0.20,20));
+/*console.log(calculateTip(0.20,20));
 console.log(calculateTip(0.25,25.50 ));
 console.log(calculateTip(0.15, 33.42));
 /*need to fix*/
