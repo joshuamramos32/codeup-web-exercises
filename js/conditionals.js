@@ -33,44 +33,46 @@ function analyzeColor(userColor){
         return " is a weird color"
     }
 }
-//console.log(analyzeColor("blue"));
+console.log(analyzeColor("blue"));
 
 // Don't change the next two lines!
 // These lines create two variables for you:
 // - `colors`: a list of the colors of the rainbow
 // - `randomColor`: contains a single random color value from the list (this
 //                  will contain a different color every time the page loads)
-//let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
-//let randomColor = colors[Math.floor(Math.random() * colors.length)];
+let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+let randomColor = colors[Math.floor(Math.random() * colors.length)];
 /**
  * TODO:
  * Pass the `randomColor` variable to your 'analyzeColor' function and console.log the results.
  * You should see a different message every time you refresh the page
  */
-//analyzeColor = randomColor
-//console.log(randomColor)
+analyzeColor = randomColor
+console.log(randomColor)
 /**
  * TODO:
  * Comment out the code above, and refactor your function to use a switch-case statement
  */
-//let color =(randomColor);
+function analyzeColor (randomColor){
 
-/*switch(color){
-    case "red":
-        alert("red is a nice color!");
-    break;
-    case"green":
-        alert("Green is the color of grass");
-    break;
-    case "yellow":
-        alert("Do you also like daisy's?");
-    break;
-    default:
-        alert(" is a random color.");
-    break;
+    switch(randomColor){
+        case "red":
+            return "red is a nice color!";
+
+        case"green":
+            return"Green is the color of grass";
+
+        case "yellow":
+            return "Do you also like daisy's?";
+
+        default:
+            return " is a random color.";
+
+    }
+
 }
 
-console.log(color)
+console.log(randomColor)
 
 /**
  * TODO:
@@ -82,7 +84,7 @@ console.log(color)
 /* ########################################################################## */
 
 
-//let userColor = prompt("What color do you like?")
+let userColor = prompt("What color do you like?")
 //alert(analyzeColor(userColor))
 //return
 
@@ -213,7 +215,7 @@ function theNum(){
      }
 }*/
 
- /*if(confirm("Would you like to enter a number?")){
+ if(confirm("Would you like to enter a number?")){
    let userNumber= parseInt(prompt("What number would you like to enter"));
 
    if(!isNaN(userNumber)) {
@@ -235,7 +237,7 @@ function theNum(){
    }else{
          alert("That is not a number")
        }
-}*/
+}
 
 /*function promptUserNumber(){
 
