@@ -1,4 +1,4 @@
-let number = 7
+let number = prompt("Please enter a number?")
 function showMultiplicationTable(){
 	for( let i = 1; i <=10; i++){
 		console.log(i + "x" + number + "=" +(number * i) )
@@ -21,7 +21,7 @@ let random=Math.floor(Math.random() * 200)+20;
 }
 
 
-// let char = "";
+// let num = "";
 //
 // for (let i = 1; i < 10; i++) {
 // 	for (let j = 1; j <= i; j++) {
@@ -30,3 +30,12 @@ let random=Math.floor(Math.random() * 200)+20;
 // 	char += "\n";
 // }
 // console.log(char);
+let num = "";
+for(let i=1; i<=10; i++) {
+	num = num + i
+	console.log(num);
+}
+
+for(let i =100; i > 0; i -=5) {
+	console.log(i);
+}
