@@ -1,12 +1,12 @@
-let number = prompt("Please enter a number?")
-function showMultiplicationTable(){
+
+function showMultiplicationTable(num){
 	for( let i = 1; i <=10; i++){
-		console.log(i + "x" + number + "=" +(number * i) )
+		console.log(num + "x" + i + "=" +(num * i));
 
 }
 
 }
-showMultiplicationTable();
+showMultiplicationTable(7);
 
 for (let i = 1; i <= 10; i++) {
 let random=Math.floor(Math.random() * 200)+20;
@@ -21,15 +21,6 @@ let random=Math.floor(Math.random() * 200)+20;
 }
 
 
-// let num = "";
-//
-// for (let i = 1; i < 10; i++) {
-// 	for (let j = 1; j <= i; j++) {
-// 		char += i;
-// 	}
-// 	char += "\n";
-// }
-// console.log(char);
 let num = "";
 for(let i=1; i<=10; i++) {
 	num = num + i
