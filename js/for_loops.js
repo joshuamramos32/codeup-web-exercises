@@ -20,13 +20,23 @@ let random=Math.floor(Math.random() * 200)+20;
 
 }
 
-
 let num = "";
 for(let i=1; i<=10; i++) {
 	num = num + i
 	console.log(num);
 }
 
+// for( let j =1; j < i; j++){
+// output +=i
+//
+// }
 for(let i =100; i > 0; i -=5) {
 	console.log(i);
 }
+
+// function numberPyramid(){
+// 	for (let i = 1; i < 10; i++) {
+// 		console.log(i.toString().repeat(i));
+// 	}
+// }
+// numberPyramid()
