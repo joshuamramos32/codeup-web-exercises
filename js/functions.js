@@ -30,6 +30,15 @@ let helloMessage= sayHello("Josh");
  * variable to the 'sayHello' function. You should see the same output in the
  * console.
  */
+
+
+// let myName= "Joshua";
+// console.log(sayHello(myName));
+
+
+function sayHello(){
+
+}
 let myName = prompt ("What is your name?");
     console.log(sayHello(myName));
 
@@ -79,7 +88,7 @@ let random = Math.floor((Math.random() * 3) + 1);
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
 
-/*
+
 function calculateTip(tipPercentage, billTotal){
     let tipTotal = tipPercentage + billTotal;
     return(tipTotal);
