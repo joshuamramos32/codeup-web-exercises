@@ -114,30 +114,77 @@ shoppers.forEach(function(shopper){
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
-    let books = [
-        {title: "In search of lost time",
-        author: { firstName:"Marcel",
-            lastName: "Proust" }
+    let books =[
+        {
+        title:"Brief History of time",
+        author: {
+            firstName: "Stephen",
+            lastName: "Hawking",
+
+            }
         },
-        {title: "Ulysses" ,
-        author: {firstName:"James",
-        lastName: "Joyce"}
+        {
+            title:"Brief History of time",
+            author: {
+                firstName: "Stephen",
+                lastName: "Hawking",
+
+            }
         },
-        {title: "Moby Dick",
-        author: {firstName: "Herman",
-        lastName: "Melville"}
+        {
+            title:"Brief History of time",
+            author: {
+                firstName: "Stephen",
+                lastName: "Hawking",
+
+            }
         },
-        {title:"War and Peace",
-        author:{firstName: "Leo",
-        lastName: "Tolstoy"}
+        {
+            title:"Brief History of time",
+            author: {
+                firstName: "Stephen",
+                lastName: "Hawking",
+
+            }
         },
-        {title:"The adventures of Huckleberry Finn",
-        author:{firstName:"Mark",
-        lastName: "Twain"}
+        {
+            title:"Brief History of time",
+            author: {
+                firstName: "Stephen",
+                lastName: "Hawking",
+
+            }
         }
     ];
     console.log(books[0].title);
-    console.log(books[0].author.firstName)
+    console.log(books[0].author.firstName);
+    console.log(books[0].author.lastName);
+
+    // my code below
+    // let books = [
+    //     {title: "In search of lost time",
+    //     author: { firstName:"Marcel",
+    //         lastName: "Proust" }
+    //     },
+    //     {title: "Ulysses" ,
+    //     author: {firstName:"James",
+    //     lastName: "Joyce"}
+    //     },
+    //     {title: "Moby Dick",
+    //     author: {firstName: "Herman",
+    //     lastName: "Melville"}
+    //     },
+    //     {title:"War and Peace",
+    //     author:{firstName: "Leo",
+    //     lastName: "Tolstoy"}
+    //     },
+    //     {title:"The adventures of Huckleberry Finn",
+    //     author:{firstName:"Mark",
+    //     lastName: "Twain"}
+    //     }
+    // ];
+    // console.log(books[0].title);
+    // console.log(books[0].author.firstName)
 
     /**
      * TODO:5
@@ -163,15 +210,23 @@ shoppers.forEach(function(shopper){
      *      ---
      *      ...
      */
-function loopBook(array){
-    for (let x = 0; x < array.length; x++){
-        let book = array[x];
-        console.log("Book # " + (x + 1));
-        console.log("Title: " + book.title);
-        console.log("Author: " + book.author.firstName +" " + book.author.lastName);
-    }
-    }
-    loopBook(books);
+books.forEach(function(book){
+    console.log("Book #" + (books.indexOf(book) + 1));
+    console.log("Title: " + book.title );
+    console.log("Author: " + book.author.firstName +" " + book.author.lastName);
+    console.log("---")
+    console.log("...")
+})
+    // my code below
+// function loopBook(array){
+//     for (let x = 0; x < array.length; x++){
+//         let book = array[x];
+//         console.log("Book # " + (x + 1));
+//         console.log("Title: " + book.title);
+//         console.log("Author: " + book.author.firstName +" " + book.author.lastName);
+//     }
+//     }
+//     loopBook(books);
     /**
      * Bonus:
      * - Create a function named `createBook` that accepts a title and author
