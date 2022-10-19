@@ -2,7 +2,7 @@
     "use strict";
 
     /**
-     * TODO:
+     * TODO:1
      * Create an object with firstName and lastName properties that are strings
      * with your first and last name. Store this object in a variable named
      * `person`.
@@ -19,7 +19,7 @@ console.log(names.firstName);
 console.log(names.lastName);
 
     /**
-     * TODO:
+     * TODO:2
      * Add a sayHello method to the person object that returns a greeting using
      * the firstName and lastName properties.
      * console.log the returned message to check your work
@@ -32,7 +32,7 @@ names.sayHello = function(){
 }
 
 console.log(names.sayHello());
-    /** TODO:
+    /** TODO:3
      * HEB has an offer for the shoppers that buy products amounting to
      * more than $200. If a shopper spends more than $200, they get a 12%
      * discount. Write a JS program, using conditionals, that logs to the
@@ -58,10 +58,10 @@ console.log(names.sayHello());
             //console.log(shopper);
             if (shopper.amount >= 200) {
                 //They get the discount.
-                var discount = (shopper.amount * 0.12).toFixed(2);
-                console.log(shopper.name + " has spent $" + shopper.amount.toFixed(2) + " today.You  qualify for a 12% discount  " + discount + ", your new total is $" + (shopper.amount - discount) + ".")
+                let discount = (shopper.amount * 0.12).toFixed(2);
+                console.log(shopper.name + " you spent $" + shopper.amount + " today.You qualify for a 12% discount your new total is $" + (shopper.amount - discount) + ".")
             } else {
-                console.log(shopper.name + ", thank you for shopping with us today. Your final total today is: $" + shopper.amount.toFixed(2));
+                console.log(shopper.name + " Your total today is: $" + shopper.amount);
             }
             console.log(shopper)
         });
@@ -72,7 +72,7 @@ console.log(names.sayHello());
 
 
 
-    /** TODO:
+    /** TODO:4
      * Create an array of objects that represent books and store it in a
      * variable named `books`. Each object should have a title and an author
      * property. The author property should be an object with properties
@@ -110,7 +110,7 @@ console.log(names.sayHello());
     console.log(books[0].author.firstName)
 
     /**
-     * TODO:
+     * TODO:5
      * Loop through the books array and output the following information about
      * each book:
      * - the book number (use the index of the book in the array)
