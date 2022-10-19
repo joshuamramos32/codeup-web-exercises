@@ -11,12 +11,15 @@
      *  > console.log(person.firstName) // "Rick"
      *  > console.log(person.lastName) // "Sanchez"
      */
-let names = {
+let person = {
     firstName: "Joshua",
-    lastName: "Ramos"
+    lastName: "Ramos",
+        // sayHello: function(){
+        // return "Hello from " + person.firstName +" "+ person.lastName + "."
+        // }
     };
-console.log(names.firstName);
-console.log(names.lastName);
+console.log(person.firstName);
+console.log(person.lastName);
 
     /**
      * TODO:2
@@ -27,22 +30,38 @@ console.log(names.lastName);
      * Example
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
-names.sayHello = function(){
-    return("Hello from " + names.firstName + " " +  names.lastName);
+
+    //my code below
+ person.sayHello = function(){
+    return("Hello from " + person.firstName + " " +  person.lastName);
 }
 
-console.log(names.sayHello());
+console.log(person.sayHello());
     /** TODO:3
      * HEB has an offer for the shoppers that buy products amounting to
-     * more than $200. If a shopper spends more than $200, they get a 12%
-     * discount. Write a JS program, using conditionals, that logs to the
-     * browser, how much Ryan, Cameron and George need to pay. We know that
-     * Cameron bought $180, Ryan $250 and George $320. Your program will have to
-     * display a line with the name of the person, the amount before the
-     * discount, the discount, if any, and the amount after the discount.
+     * more than $200.
+     *
+     * If a shopper spends more than $200, they get a 12%
+     * discount.
+     *
+     * Write a JS program, using conditionals, that logs to the
+     * browser, how much Ryan, Cameron and George need to pay.
+     *
+     * We know that
+     * Cameron bought $180, Ryan $250 and George $320.
+     *
+     * Your program will have to
+     * display a line with the name of the person,
+     *
+     * the amount before the
+     * discount,
+     * the discount ,
+     * and the amount after the discount.
      *
      * Uncomment the lines below to create an array of objects where each object
-     * represents one shopper. Use a foreach loop to iterate through the array,
+     * represents one shopper.
+     *
+     * Use a foreach loop to iterate through the array,
      * and console.log the relevant messages for each person
      */
 
@@ -53,21 +72,32 @@ console.log(names.sayHello());
         {name: 'George', amount: 320}
     ];
 
-    function discountPrice(shoppers) {
-        shoppers.forEach(function(shopper) {
-            //console.log(shopper);
-            if (shopper.amount >= 200) {
-                //They get the discount.
-                let discount = (shopper.amount * 0.12).toFixed(2);
-                console.log(shopper.name + " you spent $" + shopper.amount + " today.You qualify for a 12% discount your new total is $" + (shopper.amount - discount) + ".")
-            } else {
-                console.log(shopper.name + " Your total today is: $" + shopper.amount);
-            }
-            console.log(shopper)
-        });
+    //walk through code. this is much better and simpler then mine.
+shoppers.forEach(function(shopper){
+    console.log("Shopper: " + shopper.name);
+    console.log("amount before discount: $" + shopper.amount);
+    if(shopper.amount > 200){
+        console.log("Discount amount is 12%: " );
+        shopper.amount = shopper.amount - (shopper.amount * .12)
+    console.log("Amount after discount $" + shopper.amount);
     }
-
-    console.log(discountPrice(shoppers));
+    console.log("Final total: $" + shopper.amount)
+})
+// my code below
+    // function discountPrice(shoppers) {
+    //     shoppers.forEach(function(shopper) {
+    //         //console.log(shopper);
+    //         if (shopper.amount > 200) {
+    //             let discount = (shopper.amount * 0.12).toFixed(2);
+    //             console.log(shopper.name + " you spent $" + shopper.amount + " today.You qualify for a 12% discount your new total is $" + (shopper.amount - discount) + ".")
+    //         } else {
+    //             console.log(shopper.name + " Your total today is: $" + shopper.amount);
+    //         }
+    //         console.log(shopper)
+    //     });
+    // }
+    //
+    // console.log(discountPrice(shoppers));
 
 
 
@@ -133,9 +163,9 @@ console.log(names.sayHello());
      *      ---
      *      ...
      */
-function loopBook(Array){
-    for (let x = 0; x < Array.length; x++){
-        let book = Array[x];
+function loopBook(array){
+    for (let x = 0; x < array.length; x++){
+        let book = array[x];
         console.log("Book # " + (x + 1));
         console.log("Title: " + book.title);
         console.log("Author: " + book.author.firstName +" " + book.author.lastName);
@@ -152,5 +182,8 @@ function loopBook(Array){
      *   outputs the information described above. Refactor your loop to use your
      *   `showBookInfo` function.
      */
+    function createBook(title, authorfirstName, authorlastName, array){
+
+    }
 
 })();
