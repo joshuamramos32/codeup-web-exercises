@@ -1,0 +1,24 @@
+.fancy-header {
+    color: #b6b3c7; /* single line comment */
+    text-decoration: underline;
+}
+.fancy-header { text-align: center; }
+
+h2{
+    color:#b6b3c7;
+    font-stretch: 293%;
+}
+
+
+
+
+
+body {
+    background-image: url(""), url("");
+    background-color: #cccccc;
+    font-family: 'Oswald', sans-serif;
+
+}
+a:visited {
+    color: red;
+}
