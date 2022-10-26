@@ -14,9 +14,13 @@ h2{
 
 
 body {
-    background-image: url(""), url("");
+    background-image: url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
     background-color: #cccccc;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
     font-family: 'Oswald', sans-serif;
+
 
 }
 a:visited {
