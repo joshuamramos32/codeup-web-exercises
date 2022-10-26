@@ -1,0 +1,51 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Ubuntu, sans-serif;
+}
+#Blue {
+    width: 900px;
+    border:10px;
+    padding: 10px;
+    margin:10px;
+    background: #C6DBFD;
+    border-radius: 5px;
+    color:#6063AE;
+    font-weight: initial;
+    border: 10px #B9B3B4;
+}
+#Green{
+    width: 900px;
+    border:10px;
+    padding: 10px;
+    margin:10px;
+    background: #C8F0D5;
+    border-radius: 5px;
+    color:#63A07A;
+    font-weight: initial;
+    border: 10px #B9B3B4;
+}
+#Yellow{
+    width: 900px;
+    border:10px;
+    padding: 10px;
+    margin:10px;
+    background: #FBF8C4;
+    border-radius: 5px;
+    color:#AD9F5C;
+    font-weight: initial;
+    border: 10px #B9B3B4;
+}
+#Red{
+    width: 900px;
+    border:10px;
+    padding: 10px;
+    margin:10px;
+    background: #F1C6CB;
+    border-radius: 5px;
+    color:#953F50;
+    font-weight: initial;
+    border: 10px #B9B3B4;
+}
