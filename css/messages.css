@@ -14,7 +14,7 @@ body, html {
     border-radius: 5px;
     color:#6063AE;
     font-weight: initial;
-    border: 10px #B9B3B4;
+    border: 1px #B9B3B4 solid;
 }
 #Green{
     width: 900px;
@@ -25,7 +25,7 @@ body, html {
     border-radius: 5px;
     color:#63A07A;
     font-weight: initial;
-    border: 10px #B9B3B4;
+    border: 1px #B9B3B4 solid;
 }
 #Yellow{
     width: 900px;
@@ -36,7 +36,7 @@ body, html {
     border-radius: 5px;
     color:#AD9F5C;
     font-weight: initial;
-    border: 10px #B9B3B4;
+    border: 1px #B9B3B4 solid;
 }
 #Red{
     width: 900px;
@@ -47,5 +47,5 @@ body, html {
     border-radius: 5px;
     color:#953F50;
     font-weight: initial;
-    border: 10px #B9B3B4;
+    border: 1px #B9B3B4 solid;
 }
