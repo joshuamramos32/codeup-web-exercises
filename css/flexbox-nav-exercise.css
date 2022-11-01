@@ -13,39 +13,39 @@
 /***/
 *{
     box-sizing: border-box;
+    font-family: "Montserrat",sans-serif;
     margin: 0;
+}
+nav{
+    background: grey;
 }
 
 ul {
     display: flex;
-    background: gray;
-    color: black;
-    align-items: center;
     padding: 0;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
 }
 
  a{
-    color: black;
-    text-decoration: none;
-    display: inline-block;
-     margin:.5em
+     display: inline-block;
+     padding: .5em;
 }
 
-li{
-    font-family: "Montserrat", sans-serif;
-    list-style: none;
+a:hover{
+    color: blue;
+
 }
-header nav>ul>li:nth-of-type(4) {
-    flex-grow: 2;
-    font-family: "Montserrat", sans-serif;
-}
-header nav>ul>li:nth-of-type(5){
-    flex-grow: 3;
+
+
+.logo{
+    margin: auto;
     font-size: 3em;
     padding: .2em 0  ;
-    font-family: "Work Sans", sans-serif;
+    font-family: "Work Sans",sans-serif;
+    position: center
 }
-nav a:hover{
-    color: blue;
-}
+
+
 
