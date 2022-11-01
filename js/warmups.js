@@ -2,16 +2,16 @@
 // Ex. let obj = {name: “Potatoes”, quantity: 2, price: “$7.89"};
 // getPrice(obj); // returns “$7.89”
 
-let potatoes ={
-	name: "Potatoes",
-	quantity: 2,
-	price: "$7.89",
-};
-
-function getPrice(obj){
-	return obj.price;
-}
-console.log(getPrice(potatoes));
+// let potatoes ={
+// 	name: "Potatoes",
+// 	quantity: 2,
+// 	price: "$7.89",
+// };
+//
+// function getPrice(obj){
+// 	return obj.price;
+// }
+// console.log(getPrice(potatoes));
 
 // Write a function that when passed an array will return the longest string from the array.
 // 	Ex. const arr = [“Green”, “Blue”, “Periwinkle”];
@@ -113,3 +113,16 @@ console.log(getPrice(potatoes));
 // 	}
 //  }
 //  fizzbuzz();
+
+	let potatoes = {
+	name: "potatoes",
+	quantity: 20,
+	totalPrice: 47
+};
+function getPricePerItem(){
+// return  (potatoes.totalPrice)/(potatoes.quantity);
+let pricePer =(potatoes.totalPrice)/(potatoes.quantity)
+	return pricePer.toString()
+}
+
+console.log((getPricePerItem(potatoes))); // returns "$2.35"
