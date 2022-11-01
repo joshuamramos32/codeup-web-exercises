@@ -1,0 +1,96 @@
+/*The navbar must have the following:*/
+
+/*!*!*box-sizing: border-box for all elements*! done*/
+/*!*link text, the logo, and icons are surrounded by anchor tags*!done*/
+/*!*links turn blue on hover*!done*/
+/*anchor tags are display: inline-block done*/
+/*clickable area of links immediately flow from one link to the next (padding will help achieve this)*/
+/*Google Fonts used for logo and link text ("Montserrat" and "Work Sans", respectively)*/
+/*the "Logo" text is 3em with .2em of padding above and below*/
+/*                              no explicit height given to the navbar*/
+/*                              default styling is removed as needed from the body, unordered list and anchor tag elements*/
+/*logo is horizontally centered on the navbar (automatic margins will help achieve this)*/
+/***/
+*{
+    box-sizing: border-box;
+
+}
+body {
+    margin: 0;
+    background: white;
+}
+header nav{
+
+}
+
+
+header nav> ul {
+    display: flex;
+    background: gray;
+    color: black;
+    height: 3em;
+    align-items: center;
+    margin: 0;
+    padding: .2em;
+
+}
+
+header nav a{
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+}
+
+header nav> ul> li{
+    list-style: none;
+    margin: .5em;
+}
+header nav>ul>li:nth-of-type(1){
+    font-family: "Work Sans", sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+
+}
+header nav>ul>li:nth-of-type(2){
+    font-family: "Work Sans", sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+}
+header nav>ul>li:nth-of-type(3){
+    font-family: "Work Sans", sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+
+}
+header nav>ul>li:nth-of-type(4) {
+    margin-right: auto;
+    flex-grow: 2;
+    font-family: "Work Sans", sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+}
+header nav>ul>li:nth-of-type(5){
+    flex-grow: 2;
+    font-size: 3em;
+    padding: .2em ;
+    font-family: "Montserrat", sans-serif;
+    margin: .5em;
+
+}
+header nav>ul>li:nth-of-type(6){
+    font-size: 10px;
+    font-weight: bold;
+}
+header nav>ul>li:nth-of-type(7){
+    font-size: 10px;
+}
+header nav>ul>li:nth-of-type(8){
+    font-size: 10px;
+}
+header nav>ul>li:nth-of-type(9){
+    font-size: 10px;
+}
+nav a:hover{
+    color: blue;
+}
+
