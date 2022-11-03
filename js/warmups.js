@@ -114,15 +114,89 @@
 //  }
 //  fizzbuzz();
 
-	let potatoes = {
-	name: "potatoes",
-	quantity: 20,
-	totalPrice: 47
-};
-function getPricePerItem(){
-// return  (potatoes.totalPrice)/(potatoes.quantity);
-let pricePer =(potatoes.totalPrice)/(potatoes.quantity)
-	return pricePer.toString()
-}
+// 	let potatoes = {
+// 	name: "potatoes",
+// 	quantity: 20,
+// 	totalPrice: 47
+// };
+// function getPricePerItem(){
+// // return  (potatoes.totalPrice)/(potatoes.quantity);
+// let pricePer =(potatoes.totalPrice)/(potatoes.quantity)
+// 	return pricePer.toString()
+// }
+//
+// console.log((getPricePerItem(potatoes))); // returns "$2.35"
 
-console.log((getPricePerItem(potatoes))); // returns "$2.35"
+//  Write a function that takes in two string arguments:
+// 	the first being the string assessed, and the second being a single letter.
+// 	The function should return a count of the occurrences of the letter (second argument)
+// within the string (first argument). This function should count both upper and lowercase instances of the letter.
+
+// let firstArgument = ["b"];
+// let secondArgument = ["baseball"];
+// let thirdArgument =[];
+//
+// function argument() {
+// 	for (let i = 0; i < firstArgument.length; i++) {
+// 		for (let j = 0; j < secondArgument.length; j++) {
+// 			if (firstArgument[i] <= secondArgument[j]) {
+// 				thirdArgument.push(firstArgument[i]);
+// 				console.log(thirdArgument);
+//
+// 			}
+// 		}
+// 	}
+// }
+//
+// argument();
+// Today's warmup: Write a function that takes in an array of objects and returns the average of the heightInMM properties from each object.
+
+const hamsters = [
+	{
+		name: "Hamtaro",
+		heightInMM: 86,
+		fur: ['orange', 'white'],
+		gender: "male",
+		dateOfBirth: "August 6"
+	} , {
+		name: "Bijou",
+		heightInMM: 75,
+		fur: ['white'],
+		gender: "female",
+		dateOfBirth: "July 10"
+	} , {
+		name: "Oxnard",
+		heightInMM: 100,
+		fur: ['grey', 'white'],
+		gender: "male",
+		dateOfBirth: "May 3"
+	} , {
+		name: "Boss",
+		heightInMM: 120,
+		fur: ['brown', 'white'],
+		gender: "male",
+		dateOfBirth: "September 21"
+	} , {
+		name: "Snoozer",
+		heightInMM: 85,
+		fur: ['brown', 'white', "pink"],
+		gender: "male",
+		dateOfBirth: "January 14"
+	}
+];
+//
+// function getAverageHeight(arr){
+// 	return (hamsters.reduce((acc, {heightInMM}) => (acc + heightInMM), 0))/arr.length;
+// }
+//
+// console.log(getAverageHeight(hamsters)); // should return 93.2;
+
+//walk through example for hamsters
+function getAverageHeight(array){
+	let totalHeight = 0;
+	for (let element of array) {
+		totalHeight += element.heightInMM;
+	}
+	return totalHeight / array.length;
+}
+console.log(getAverageHeight(hamsters));
