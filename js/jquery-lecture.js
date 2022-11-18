@@ -5,7 +5,7 @@
 		//alert($("intro-heading").html());
 		let listItems =$(".list-item");
 		let paragraphs=$("p");
-		$("#intro-heading").css("color", "orangered");
+
 		console.log(document.getElementsByClassName("list-item"));
 		console.log($(listItems));
 		$(listItems).css("color", "blue");
