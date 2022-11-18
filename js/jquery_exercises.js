@@ -5,18 +5,28 @@ $(function(){
 	// alert($("#my-div").html());
 	// $(".codeup").css("border", "1px solid red");
 	// $("li").css("font-size"," 20px")
-	$("h1").css("background-color", "yellow")
-	$("li").css("background-color", "lightgreen")
-	$("p").css("background-color", "cyan")
+	// $("h1").css("background-color", "yellow")
+	// $("li").css("background-color", "lightgreen")
+	// $("p").css("background-color", "cyan")
 	// $("h1, p, li").css("background-color", "yellow")
 
 
 
 
+	$('#header1').click(function() {
+		$(this).css('background-color',"pink")
+	});
 
 
+	$('#header2').dblclick(function() {
+		$(this).css('background-color',"limegreen")
+	});
 
-
+	$('.the-ul').hover(function() {
+		$(this).css("background-color", "blue");
+	}, function() {
+		$(this).css('background-color'," red");
+	});
 
 
 
