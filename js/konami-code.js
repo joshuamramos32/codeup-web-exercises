@@ -7,20 +7,20 @@ $(document).keyup(function(event){
 
 function contraCheat(){
 let cheatKeys = { 37: "left", 38: "up", 39: "right", 40: "down", 65: "a", 66: "b", 13: "enter"};
-let cheatCode = ["up","up","down","down","left","right","left","right","b","a","enter"]
+let cheatCode = ["up","up","down","down","left","right","left","right","b","a","enter"] //this combination of keys will activate cheat//
 let cheatPosition = 0;
 $(document).keydown(function(e){
 	let key = cheatKeys[e.keyCode];
 	let requiredKey = cheatCode[cheatPosition];
 	if(cheatPosition === cheatCode.length-1){
-		$(".header").text("Konami Cheat Code success 30 Lives!!!!").css({
+		$(".header").text("Konami Cheat Code success 30 Lives!!!!").css({  // changes the title and color of font//
 			"color": "yellow"
 		});
 		$(".body").css({
-		"background-image": 'url("img/contra.gif")',
+		"background-image": 'url("img/contra.gif")',//chagnes the image from a white background to the gif//
 		});
 	}else if(key === requiredKey){
-		cheatPosition = ++cheatPosition;
+		cheatPosition = ++cheatPosition;// sets position at 0 to iterate through array//
 	}else{
 		cheatPosition = 0;
 	}
