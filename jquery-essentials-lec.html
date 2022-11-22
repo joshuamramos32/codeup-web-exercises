@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> jquery essentials lecture</title>
+	<style>
+		.text-style{
+			font-family: 'Helvetica', sans-serif;
+			color: navy;
+		}
+	</style>
+</head>
+<body>
+<h1 id="main-heading">jquery essential methods lecture</h1>
+<main id="main"></main>
+
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script>
+
+	$("#main-heading")
+		.html("Howdy from JS!!")
+		.css({"color": "limegreen",
+			"background": "crimson",
+			display: "flex",
+			justifyContent:"center"
+		});
+	$("#main").html("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid architecto asperiores autem, consectetur cupiditate distinctio eos, ex in ipsam, nisi quod rem rerum saepe sequi similique sunt vero voluptas.")
+		.addClass("text-style")
+		.css("font-weight", "bold").click(function(){
+			$(this).toggleClass("text-style");
+
+	})
+	// "console.log($("#main-heading").html("Howdy from JS!"));
+
+
+
+</script>
+</body>
+</html>
