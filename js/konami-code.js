@@ -17,7 +17,7 @@ $(document).keydown(function(e){
 			"color": "yellow"
 		});
 		$(".body").css({
-		"background-image": 'url("img/contra.gif")',//chagnes the image from a white background to the gif//
+		"background-image": 'url("img/contra.gif")',//changes the image from a white background to the gif//
 		});
 	}else if(key === requiredKey){
 		cheatPosition = ++cheatPosition;// sets position at 0 to iterate through array//
@@ -45,6 +45,11 @@ function superMarioGif() {
 				"color":"#FF5F1F",
 				"font-size": "40px",
 			});
+			// $(bodies).ready(function () {
+			// 	let audioElement = document.createElement('audio');
+			// 	audioElement.setAttribute('src','sounds/laugh.mp3'); // this code is not functioning properly need to fix.
+			// 	audioElement.setAttribute("play", "autoplay");
+			// });
 		} else if (key === requiredKey) {
 			cheatPos2 = ++cheatPos2;
 		} else {
