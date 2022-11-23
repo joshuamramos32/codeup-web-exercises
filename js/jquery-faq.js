@@ -19,7 +19,11 @@ $('dd').slideToggle();
 
 $('#dt-1').click(function() {
 	$('#dd-1').slideToggle();
-	$('.invisible').css('visibility', 'unset');
+	$('.invisible').css({
+		'visibility': 'unset',
+		'background-color': 'pink'
+	});
+
 });
 
 $('#dt-2').click(function() {
