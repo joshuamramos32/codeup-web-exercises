@@ -21,7 +21,7 @@ $('#dt-1').click(function() {
 	$('#dd-1').slideToggle();
 	$('.invisible').css({
 		'visibility': 'unset',
-		'background-color': 'pink'
+		'background-color': 'limegreen'
 	});
 
 });
@@ -83,5 +83,5 @@ $('#state-parks').click(function() { // bolds all li's when the  first h3 is cli
 	$('.lis2').css('font-weight',"bold")
 });
 $('li').click(function(){
-	$(this).parent().children().first().css('color','blue')
+	$(this).parent().children().first().css('color','blue')// changes font color to blue of first li when any li is clicked in the parent ul.
 });
