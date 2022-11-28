@@ -70,3 +70,18 @@ $('#dt-10').click(function() {
 	$('#dd-10').slideToggle();
 	$('.invisible').css('visibility', 'unset');
 });
+$('.click-here').click(function() {
+	$('.last-li').css('background-color',"yellow")// for the first h3 to change last li background -color
+});
+$('.click-here2').click(function() {
+	$('.last-li2').css('background-color',"yellow")// for the last h3 to change the first li background-color
+});
+$('#national-parks-heading').click(function() { // bolds all li's when the  first h3 is clicked
+	$('.lis').css('font-weight',"bold")
+});
+$('#state-parks').click(function() { // bolds all li's when the  first h3 is clicked
+	$('.lis2').css('font-weight',"bold")
+});
+$('li').click(function(){
+	$(this).parent().children().first().css('color','blue')
+});
