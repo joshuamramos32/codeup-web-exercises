@@ -1,24 +1,48 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--	<meta charset="UTF-8">-->
+<!--	<title>Jquery practice</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--	<h1 id="intro-heading">jQuery Introduction</h1>-->
+<!--	<ul>-->
+<!--		<li class="list-item">1</li>-->
+<!--		<li class="list-item">2</li>-->
+<!--		<li class="list-item">3</li>-->
+<!--		<li class="list-item">4</li>-->
+<!--	</ul>-->
+<!--	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam dignissimos eos explicabo laborum placeat quasi ratione voluptatum. Ab cupiditate ducimus eaque esse excepturi ipsam necessitatibus optio quibusdam, ullam veritatis.-->
+<!--	</p>-->
+
+<!--&lt;!&ndash;adding&ndash;&gt;-->
+
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>Jquery practice</title>
+	<title>Example jQuery Page</title>
 </head>
 <body>
-	<h1 id="intro-heading">jQuery Introduction</h1>
-	<ul>
-		<li class="list-item">1</li>
-		<li class="list-item">2</li>
-		<li class="list-item">3</li>
-		<li class="list-item">4</li>
-	</ul>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam dignissimos eos explicabo laborum placeat quasi ratione voluptatum. Ab cupiditate ducimus eaque esse excepturi ipsam necessitatibus optio quibusdam, ullam veritatis.
-	</p>
-
-<!--adding-->
+<h1 id="codeup">Hello Codeup</h1>
 
 
+<script>
+	"use strict";
 
+	$(document).ready(function() {
+		$('#codeup').hover(
+			function() {
+				$(this).css('background-color', '#FF0');
+			},
+			function() {
+				$(this).css('background-color', '#FFF');
+			}
+		);
+	});
+</script>
+</body>
+</html>
 
 
 
@@ -39,6 +63,6 @@
 
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-<script src="js/jquery-lecture.js"></script>
+
 </body>
 </html>
