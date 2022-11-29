@@ -18,12 +18,11 @@
 			console.log(data);
 			let blog = "";
 			for (let i = 0; i< data.length; i++){
-				blog += "<div class='container'>";
+				blog += "<div class='container p-0'>";
 				blog += "<h2 class ='p-4 p-md-5 mb-4 text-white rounded bg-dark'>" + data[i].title + "</h2>";
 				blog +="<h5>Date Posted</h5>"
 				blog += "<time>" + data[i].date + "</time>";
 				blog += "<p class='row mb-2'>" + data[i].content + "</p>";
-				blog += "<div class='col-md-6'>"
 				blog += "<h4>Topics</h4>"
 				blog += "<p>"+ data[i].categories + "</p>";
 				blog += "<div></div>"
