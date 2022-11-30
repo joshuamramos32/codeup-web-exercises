@@ -27,12 +27,27 @@
 <!-- Custom JS -->
 <script>
 	mapboxgl.accessToken = mapBoxkey;
-	var map = new mapboxgl.Map({
+	let map = new mapboxgl.Map({
 		container: 'map',
 		style: 'mapbox://styles/mapbox/streets-v9',
-		zoom: 20,
-		center: [-102.11405948707137, 32.036951643837824]
+		zoom: 6,
+		center: [-99.17069891736739,31.39171792518191]// location of Moon Garden in Midland,Tx
 	});
+	let marker = new mapboxgl.Marker()
+		.setLngLat([-102.11405948707137, 32.036951643837824])
+		.addTo(map);
+	let moonGardenPopUp = new mapboxgl.Popup().setHTML("<p>Moon Garden</p>");
+	marker.setPopup(moonGardenPopUp);
+	let marker2 = new mapboxgl.Marker()
+		.setLngLat([-97.37603401732963, 31.078345636274847])
+		.addTo(map);
+	let pizzaPopUp = new mapboxgl.Popup().setHTML("<p>Pizza Wings n Things</p>");
+	marker2.setPopup(pizzaPopUp);
+	let marker3 = new mapboxgl.Marker()
+		.setLngLat([-97.67568828650623, 30.411612100832496,])
+		.addTo(map);
+	let chillaPopUp =  new mapboxgl.Popup().setHTML("<p>Los ChilaKillers</p><li>Great Breakfast</li><li>Great price</li>");
+	marker3.setPopup(chillaPopUp);
 </script>
 </body>
 </html>
