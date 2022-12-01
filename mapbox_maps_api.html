@@ -23,16 +23,26 @@
 
 <!-- Mapbox JS -->
 <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
-<script src="js/keys.js"></script>
+
 <!-- Custom JS -->
+<script src="js/keys.js"></script>
+<script src="js/mapbox-geocoder-utils.js"></script>
 <script>
 	mapboxgl.accessToken = mapBoxkey;
 	let map = new mapboxgl.Map({
 		container: 'map',
 		style: 'mapbox://styles/mapbox/streets-v9',
 		zoom: 6,
-		center: [-99.17069891736739,31.39171792518191]// location of Moon Garden in Midland,Tx
+		center: [-98.24469152900377, 29.599513484118077, ]// location of Moon Garden in Midland,Tx
 	});
+	map.addControl(new mapboxgl.NavigationControl());
+	var markerOptions = {
+		color: "darkred",
+		draggable: false
+	};
+
+
+
 	let marker = new mapboxgl.Marker()
 		.setLngLat([-102.11405948707137, 32.036951643837824])
 		.addTo(map);
@@ -48,6 +58,44 @@
 		.addTo(map);
 	let chillaPopUp =  new mapboxgl.Popup().setHTML("<p>Los ChilaKillers</p><li>Great Breakfast</li><li>Great price</li>");
 	marker3.setPopup(chillaPopUp);
+	let favRestaurants =[
+		{
+			name: "Moon Garden",
+			location: "2319 Loop 250 Frontage Rd, Midland, TX 79705",
+			food: "Chinese",
+			price: "$",
+		},{
+
+			name:"Pizza wings N things",
+			location:"2112 SW H K Dodgen Loop Suite #106, Temple, TX 76504",
+			food:"Pizza, Wings, Burgers ",
+			price:"$",
+		},{
+			name:"Los ChilaKillers",
+			location:"13000 N Interstate Hwy 35 Building 12 Suite 204, Austin, TX 78753",
+			food:"Mexican",
+			price:"$",
+
+		}
+
+
+	];
+	// function restaurantMarkerPopUp(favrestaurant, mapBoxkey, map){
+	// 	favRestaurants.forEach(function(favrestaurant){
+	// 		geocode(favrestaurant.location, mapBoxkey).then(function(result){
+	// 			let restaurantPopUp = new mapboxgl.Popup({closeOnClick: true})
+	// 				.setHTML("<p>" + favrestaurant.name + "</p>" +"<p>" + favrestaurant.food + "</p>" + "<p>" + favrestaurant.price +"</p>");
+	// 			let restaurantMarker = new mapboxgl.Marker()
+	// 				.setLngLat(result)
+	// 				.setPopup(restaurantPopUp)
+	// 				.addTo(map);
+	//
+	// 			restaurantMarker;
+	//
+	// 		});
+	// 	});
+	// }
+	// restaurantMarkerPopUp();
 </script>
 </body>
 </html>
