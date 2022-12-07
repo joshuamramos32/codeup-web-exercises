@@ -33,21 +33,23 @@ const users = [
 		email: 'justin@codeup.com',
 		languages: ['html', 'css', 'javascript', 'php'],
 		yearsOfExperience: 9
-	}
+	},
 ];
 // TODO: Use .filter to create an array of user objects where each user object has at least 3 languages in the languages array.
 
-const threeLanguages = users.filter( user => { return user.languages.length >=3; })
+const threeLanguages = users.filter((user) =>  user.languages.length >= 3);
 console.log(threeLanguages);
 // TODO: Use .map to create an array of strings where each element is a user's email address
 
-const userEmails = users.map((user) => user.email);
+const userEmails = users.map(user => user.email);
 console.log(userEmails);
 
 //TODO: Use .reduce to get the total years of experience from the list of users. Once you get the total of years you can use the result to calculate the average.
 
 const totalYears = users.reduce((total, user) => total + user.yearsOfExperience, 0);
 console.log(totalYears);
+let calcAvg = (totalYears / users.length);
+console.log(calcAvg);
 
 // TODO: Use .reduce to get the longest email from the list of users.
 
@@ -69,3 +71,4 @@ const allNames = users.reduce((names, user) => {
 	return names + user.name;
 },"");
 console.log(allNames);
+

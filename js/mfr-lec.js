@@ -32,6 +32,43 @@ const hamsters = [
 	}
 ];
 
+const motorCycles = [
+	{
+		brand: "Harley",
+		model: "Sportster",
+		enginesize: 883,
+		color: "flames",
+		year: 1996
+	},{
+		brand : "Honda",
+		model: "Shadow",
+		enginesize: 750,
+		color: "red",
+		year: 1989
+	},{
+		brand: "Harley",
+		model: "Dyna",
+		enginesize: 1540,
+		color: "blue",
+		year: 2006
+
+	},{
+		brand:"Harley",
+		model: "Softtail-Deluxe",
+		enginesize: 1540,
+		color: "black",
+		year: 2009
+	},{
+		brand: "Harley",
+		model: "LowriderST",
+		enginesize: 1923,
+		color: "gunship-grey",
+		year: 2022
+
+}
+];
+
+
 const numbers = [1,2,3,4,5];
 
 //.map()- will change every element of the array, and return a new array of the same length
@@ -106,3 +143,14 @@ console.log(countWords('Mary had a little lamb little lamb little lamb'));;
 console.log(countWords('Everbody get up its time to slam now we got a real jam going now welcome to the space jam'));
 
 
+const engineS = motorCycles.map((size) => size.enginesize);
+console.log(engineS);
+
+const types = motorCycles.map((type) => type.brand);
+console.log(types);
+
+const mcModel = motorCycles.map((name) => name.model);
+console.log(mcModel);
+
+const everyOther = motorCycles.filter(motorcycle => motorcycle % 2 === 0);
+console.log(everyOther);
