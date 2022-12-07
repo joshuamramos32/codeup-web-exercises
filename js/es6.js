@@ -48,12 +48,13 @@ let names = [];
 // users.forEach(function(user) {
 //   return emails.push(user.email);
 // });
-users.forEach( user => names.push(user.email));
+users.forEach( user => emails.push(user.email));
 // users.forEach(function(user) {
 //   return names.push(user.name);
 // });
+console.log(emails);
 users.forEach( user => names.push(user.name));
-
+console.log(names);
 let developers = [];
 users.forEach((user) => {
   const {name, email, languages} = user;
@@ -63,12 +64,14 @@ users.forEach((user) => {
   // const languages = user.languages;
 
 
-  developers.push(`${name}\'s email is${email}${name} knows ${languages.join(', ')}.`);
+  developers.push(`${name}\'s email is ${email} ${name} knows ${languages.join(', ')}.`);
 });
-
+console.log(developers);
 
 let list = '<ul>';
 for (let developer of developers){
   list += `<li>${developer}</li>`;
 };
 list += '</ul>';
+// list= `${list}<li${developer}</li>`;
+// document.getElementById("go-here").innerHTML = list;
